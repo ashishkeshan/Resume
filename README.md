@@ -3,4 +3,4 @@ A single-page, one-column resume for software developers. It uses the base latex
 
 
 ### Preview
-![Resume Screenshot](/resume_preview.png)
+![Resume Screenshot](/resume_screenshot.png)
