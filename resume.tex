@@ -1,0 +1,174 @@
+%-------------------------
+% Resume in Latex
+% Author : Ashish Keshan
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage{fontawesome}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage[default]{sourcesanspro}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://github.com/ashishkeshan}{\huge Ashish Keshan}} &  \href{mailto:ashishk1216@gmail.com}{ashishk1216@gmail.com}\\
+  \href{https://github.com/ashishkeshan}
+  {\color{darkgray}\faGithub~ashishkeshan}~{|}~\href{https://linkedin.com/in/ashishkeshan}{\color{darkgray}\faLinkedinSquare~ashishkeshan} &  (123)-456-7890 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Southern California}{Los Angeles, CA}
+      {B.S. Computer Science and Business Adminstration;  GPA: 3.81}{Aug. 2015 -- May. 2019}
+    \resumeSubheading
+      {University of Southern California}{Los Angeles, CA}
+      {M.S. Computer Science}{Aug. 2018 -- Dec. 2019}
+      
+      {Courses: Natural Language Processing; Machine Learning; Analysis of Algorithms}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    
+    \resumeSubheading
+      {FreeFlows}{Los Angeles, CA}
+      {Co-Founder \& CTO}{Apr. 2018 - Present}
+      \resumeItemListStart
+        \resumeItem{BeatStyle}
+          {Designed and developed an iOS music production application that provides users with in-house instrumentals and a recording platform to create and share their music.}
+        \resumeItem{Business Responsibilities}
+          {Growing the business organization  through marketing as well as working on company financials and legalese.}
+        \resumeItem{Metrics}
+          {400+ user-created songs, 30,000+ songs and instrumentals played, and 5.0 rating on App Store}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {Microsoft}{Redmond, WA}
+      {Software Engineering Intern - CosmosDB}{Summer 2018}
+      \resumeItemListStart
+        \resumeItem{Health Monitoring}
+          {Wrote automation scripts that continually monitor the health status of database clusters.}
+        \resumeItem{Incident Annotation}
+          {The scripts fill in clear troubleshooting details which highlight the faulty micro-service and thereby minimize the time to mitigate by about 40\%.}
+        \resumeItem{Auto-Mitigation}
+          {Resolved 300+ incidents that had quick fixes such as restarting an unresponsive node, thereby preventing an on-call engineer from being paged and reducing human error.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Yahoo! (Oath:)}{Sunnyvale, CA}
+      {Technical Intern - Growth \& Monetization}{Summer 2017}
+      \resumeItemListStart
+        \resumeItem{Accordion Ad}
+          {Devised a new Accordion Ad Layout by implementing custom 3D animations on iOS. The ad unfolds a card ad like an accordion to reveal an image/video as the user scrolls down.}
+        \resumeItem{System Development}
+          {Changed Yahoo Fantasy Sports iOS ad system from UI Integration to Data Integration to deliver more versatile and extensible ad views.}
+        \resumeItem{Tiles Ad}
+          {Created a new Tiles ad format for native iOS for use across all Yahoo iOS apps (similar to Instagram Stories Design).}
+        \resumeItem{Metrics}
+          {Improved click through rate (CTR) of ads on the Fantasy Sports App dashboard by 50\% due to the Accordion format.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Human-Robot Interaction}
+      {Built a data pipeline that analyzed videos of children interacting with a robot using OpenCV. Fed results into a neural network to predict with 99\% accuracy whether a child was looking at the robot or away. Technologies: OpenFace, Python}
+    \resumeSubItem{Scrabble}
+      {Built Scrabble from scratch with a fully functional GUI and computer player. Technologies: C++, Qt}
+    \resumeSubItem{Twisted Kicks}
+      {Developed the iOS and Android companion apps for the card game. Technologies: Swift, Java }
+    \resumeSubItem{KnowItAll}
+      {Developed an iOS app with a backend that provides ratings and reviews for all things around or related to USC like restaurants, classes, concerts, etc. Technologies: Swift, Django}
+  \resumeSubHeadingListEnd
+  
+%  ------------INVOLVEMENT--------------------
+\section{Involvement}
+ \resumeSubHeadingListStart
+    \resumeSubItem{Scope}
+     {Member of a Computer Science org in which we learn a trending language/framework each semester then apply our learning by creating a project with it. Examples include: React Native, Node.js, and Electron}
+     \resumeSubItem{Daily Trojan}
+     {Beat writer on USC's student run paper where I covered basketball for a year.}
+ \resumeSubHeadingListEnd
+
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+    \resumeSubItem{Languages}
+     {C++, Python, Swift, Objective-C, Java, JavaScript, SQL, NoSQL}
+    \resumeSubItem{Technologies}
+     {AWS, Firebase, Microsoft SQL Server, Xcode}
+ \resumeSubHeadingListEnd
+
+\end{document}
