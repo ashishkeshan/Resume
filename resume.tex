@@ -61,6 +61,16 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+\newcommand{\educationHeading}[7]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+      \text{\small#7}\\
+    \end{tabular*}\vspace{-5pt}
+}
+
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
@@ -87,14 +97,16 @@
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
+    \educationHeading
       {University of Southern California}{Los Angeles, CA}
       {B.S. Computer Science and Business Adminstration;  GPA: 3.81}{Aug. 2015 -- May. 2019}
-    \resumeSubheading
-      {University of Southern California}{Los Angeles, CA}
       {M.S. Computer Science}{Aug. 2018 -- Dec. 2019}
+      {Relevant Coursework: Database Systems, Operating Systems, NLP, ML, Analysis of Algorithms}
+    % \resumeSubheading
+    %   {University of Southern California}{Los Angeles, CA}
+    %   {M.S. Computer Science}{Aug. 2018 -- Dec. 2019}
       
-      {Courses: Natural Language Processing; Machine Learning; Analysis of Algorithms}
+    %   {Courses: Natural Language Processing; Machine Learning; Analysis of Algorithms}
   \resumeSubHeadingListEnd
 
 
