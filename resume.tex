@@ -88,9 +88,9 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://github.com/ashishkeshan}{\huge Ashish Keshan}} &  \href{mailto:ashishk1216@gmail.com}{ashishk1216@gmail.com}\\
+  \textbf{\href{https://github.com/ashishkeshan}{\huge Ashish Keshan}} &  \href{mailto:ashkeshan@gmail.com}{ashkeshan@gmail.com}\\
   \href{https://github.com/ashishkeshan}
-  {\color{darkgray}\faGithub~ashishkeshan}~{|}~\href{https://linkedin.com/in/ashishkeshan}{\color{darkgray}\faLinkedinSquare~ashishkeshan} &  (123)-456-7890 \\
+  {\color{darkgray}\faGithub~ashishkeshan}~{|}~\href{https://linkedin.com/in/ashishkeshan}{\color{darkgray}\faLinkedinSquare~ashishkeshan} &  (408)-623-3909 \\
 \end{tabular*}
 
 
@@ -99,20 +99,27 @@
   \resumeSubHeadingListStart
     \educationHeading
       {University of Southern California}{Los Angeles, CA}
-      {B.S. Computer Science and Business Adminstration;  GPA: 3.81}{Aug. 2015 -- May. 2019}
+      {B.S. Computer Science and Business Administration;  GPA: 3.81}{Aug. 2015 -- May. 2019}
       {M.S. Computer Science}{Aug. 2018 -- Dec. 2019}
       {Relevant Coursework: Database Systems, Operating Systems, NLP, ML, Analysis of Algorithms}
-    % \resumeSubheading
-    %   {University of Southern California}{Los Angeles, CA}
-    %   {M.S. Computer Science}{Aug. 2018 -- Dec. 2019}
-      
-    %   {Courses: Natural Language Processing; Machine Learning; Analysis of Algorithms}
   \resumeSubHeadingListEnd
 
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
+  
+  \resumeSubheading
+      {Microsoft}{San Francisco, CA}
+      {Software Engineering Intern - App Center}{Summer 2019}
+      \resumeItemListStart
+        \resumeItem{Diagnostics}
+          {Extended platform support to Electron apps for creating and displaying error groups on the portal.}
+        \resumeItem{Source-Mapping}
+          {Implemented support for source-mapping stacktraces from minified javascript files to the actual source-code location.}
+        \resumeItem{Metrics}
+          {Multiple Electron applications with 1 million+ DAUs onboarded onto the platform. }
+      \resumeItemListEnd
     
     \resumeSubheading
       {FreeFlows}{Los Angeles, CA}
@@ -123,7 +130,7 @@
         \resumeItem{Business Responsibilities}
           {Growing the business organization  through marketing as well as working on company financials and legalese.}
         \resumeItem{Metrics}
-          {400+ user-created songs, 30,000+ songs and instrumentals played, and 5.0 rating on App Store}
+          {2,000+ user-created songs, 150,000+ instrumental plays, and 4.7 rating on App Store}
       \resumeItemListEnd
     
     \resumeSubheading
@@ -143,44 +150,33 @@
       {Technical Intern - Growth \& Monetization}{Summer 2017}
       \resumeItemListStart
         \resumeItem{Accordion Ad}
-          {Devised a new Accordion Ad Layout by implementing custom 3D animations on iOS. The ad unfolds a card ad like an accordion to reveal an image/video as the user scrolls down.}
-        \resumeItem{System Development}
-          {Changed Yahoo Fantasy Sports iOS ad system from UI Integration to Data Integration to deliver more versatile and extensible ad views.}
+          {Devised a new ad format on iOS which uses custom 3D animations to "unfold" like an accordion and reveal the image/video beneath it as the user scrolls.}
         \resumeItem{Tiles Ad}
-          {Created a new Tiles ad format for native iOS for use across all Yahoo iOS apps (similar to Instagram Stories Design).}
+          {Created a new Tiles ad format for native iOS for use across all Yahoo iOS apps (similar to Instagram Stories).}
         \resumeItem{Metrics}
-          {Improved click through rate (CTR) of ads on the Fantasy Sports App dashboard by 50\% due to the Accordion format.}
+          {Improved click through rate of ads on the Fantasy Sports App dashboard by 50\% due to the Accordion format.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
   
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
+    \resumeSubItem{Part-of-Speech Tagger}
+      {Implemented a sequence-to-sequence Recurrent Neural Network model in TensorFlow. Model achieved above 93\% accuracy on Italian and Japanese datasets (top 20\% in class). Technologies: TensorFlow}
     \resumeSubItem{Human-Robot Interaction}
       {Built a data pipeline that analyzed videos of children interacting with a robot using OpenCV. Fed results into a neural network to predict with 99\% accuracy whether a child was looking at the robot or away. Technologies: OpenFace, Python}
     \resumeSubItem{Scrabble}
       {Built Scrabble from scratch with a fully functional GUI and computer player. Technologies: C++, Qt}
-    \resumeSubItem{Twisted Kicks}
-      {Developed the iOS and Android companion apps for the card game. Technologies: Swift, Java }
     \resumeSubItem{KnowItAll}
       {Developed an iOS app with a backend that provides ratings and reviews for all things around or related to USC like restaurants, classes, concerts, etc. Technologies: Swift, Django}
   \resumeSubHeadingListEnd
-  
-%  ------------INVOLVEMENT--------------------
-\section{Involvement}
- \resumeSubHeadingListStart
-    \resumeSubItem{Scope}
-     {Member of a Computer Science org in which we learn a trending language/framework each semester then apply our learning by creating a project with it. Examples include: React Native, Node.js, and Electron}
-     \resumeSubItem{Daily Trojan}
-     {Beat writer on USC's student run paper where I covered basketball for a year.}
- \resumeSubHeadingListEnd
 
 \section{Programming Skills}
  \resumeSubHeadingListStart
     \resumeSubItem{Languages}
-     {C++, Python, Swift, Objective-C, Java, JavaScript, SQL, NoSQL}
+     {C++, Python, Swift, Objective-C, JavaScript, SQL, NoSQL}
     \resumeSubItem{Technologies}
-     {AWS, Firebase, Microsoft SQL Server, Xcode}
+     {Azure, AWS, Xcode, Docker, Kubernetes}
  \resumeSubHeadingListEnd
 
 \end{document}
